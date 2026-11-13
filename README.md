@@ -31,7 +31,7 @@
 
 ## Install
 
-1. Masuk ke GitHub dengan akun yang punya akses ke repo privat ini, lalu [unduh RewindMac.zip](https://github.com/Fikriazrbni/RewindMac/releases/download/v1.4.6/RewindMac.zip) dari [release v1.4.6](https://github.com/Fikriazrbni/RewindMac/releases/tag/v1.4.6).
+1. [Unduh RewindMac.zip](https://github.com/Fikriazrbni/RewindMac/releases/download/v1.4.6/RewindMac.zip) dari [release v1.4.6](https://github.com/Fikriazrbni/RewindMac/releases/tag/v1.4.6). Kamu bisa mengunduhnya tanpa login GitHub.
 2. Ekstrak ZIP, pindahkan **RewindMac.app** ke **Applications**, lalu buka dari sana. Saat memperbarui, tutup aplikasi lama dengan **⌘Q** sebelum menggantinya.
 3. Ikuti [langkah Full Disk Access](#impor-screen-time) jika ingin mengimpor riwayat dari Mac ini.
 
