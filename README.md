@@ -10,6 +10,11 @@
 </p>
 
 <p align="center">
+  <strong><a href="https://github.com/Fikriazrbni/RewindMac/releases/download/v1.4.6/RewindMac.zip">Unduh RewindMac v1.4.6 (.zip)</a></strong><br>
+  macOS 14+ · Apple silicon (seri M)
+</p>
+
+<p align="center">
   <a href="#install">Install</a> ·
   <a href="#impor-screen-time">Impor Screen Time</a> ·
   <a href="#pakai-rewindmac">Pakai RewindMac</a> ·
@@ -26,19 +31,27 @@
 
 ## Install
 
-**Persyaratan.** macOS 14 atau lebih baru, Swift 6, dan macOS SDK dari Xcode atau Command Line Tools.
+1. Masuk ke GitHub dengan akun yang punya akses ke repo privat ini, lalu [unduh RewindMac.zip](https://github.com/Fikriazrbni/RewindMac/releases/download/v1.4.6/RewindMac.zip) dari [release v1.4.6](https://github.com/Fikriazrbni/RewindMac/releases/tag/v1.4.6).
+2. Ekstrak ZIP, pindahkan **RewindMac.app** ke **Applications**, lalu buka dari sana. Saat memperbarui, tutup aplikasi lama dengan **⌘Q** sebelum menggantinya.
+3. Ikuti [langkah Full Disk Access](#impor-screen-time) jika ingin mengimpor riwayat dari Mac ini.
 
-1. Jika belum punya toolchain, jalankan `xcode-select --install`. Cek versi Swift dengan `swift --version`.
-2. Clone repo dan build aplikasi. Untuk repo privat, gunakan akun GitHub yang punya akses.
+Paket ini dibuat untuk **Mac Apple silicon** dengan **macOS 14 atau lebih baru**. Aplikasi ditandatangani secara *ad hoc* dan belum dinotariskan. Jika macOS menahan pembukaan pertama karena aplikasi belum dinotariskan, lihat [panduan Apple untuk membuka aplikasi yang kamu percayai](https://support.apple.com/en-us/102445).
 
-   ```sh
-   git clone https://github.com/Fikriazrbni/RewindMac.git
-   cd RewindMac
-   ./Scripts/build-app.sh
-   open dist
-   ```
+<details>
+<summary>Build dari source, termasuk untuk Mac Intel</summary>
 
-3. Dari Finder, pindahkan **RewindMac.app** ke **Applications**, lalu buka dari sana. Saat memperbarui, tutup aplikasi lama dengan **⌘Q** sebelum menggantinya.
+Siapkan Swift 6 dan macOS SDK dari Xcode atau Command Line Tools. Jalankan `xcode-select --install` jika belum punya toolchain. Build mengikuti arsitektur Mac yang menjalankannya.
+
+```sh
+git clone https://github.com/Fikriazrbni/RewindMac.git
+cd RewindMac
+./Scripts/build-app.sh
+open dist
+```
+
+Pindahkan **RewindMac.app** dari folder **dist** ke **Applications**.
+
+</details>
 
 <details>
 <summary>Build lewat Xcode dan menjalankan tes</summary>
